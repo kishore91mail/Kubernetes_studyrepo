@@ -1,0 +1,8 @@
+---
+- name: create an empty file
+  hosts: all
+  tasks:-
+   - name: creating the single files
+     file:
+      path: "/root/testfile"
+      state: touch
